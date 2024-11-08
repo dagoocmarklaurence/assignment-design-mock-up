@@ -3,3 +3,61 @@
   padding: 0;
   /*  background-color: #212a37; */
 }
+
+h1 {
+  text-align: center;
+}
+
+#card {
+  display: flex;
+  flex-direction: row;
+  margin-top: 16px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.card-wrapper:hover {
+  cursor: pointer;
+  box-shadow: 0 2px 4px 0 rgba(103, 101, 101, 0);
+}
+
+.card-wrapper {
+  border: 1px solid #d0cccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+  .card-wrapper {
+    width: calc((100% - 14px) / 2);
+  }
+
+  /*  h2,
+  h3,
+  h4 {
+    font-size: 1em;
+  } */
+}
+
+@media screen and (min-width: 768px) {
+  .card-wrapper {
+    width: calc((100% - 26px) / 3);
+  }
+}
+
+.card-header img {
+  object-fit: cover;
+  width: 100%;
+  height: 120px;
+}
+
+.card-body {
+  padding: 4px;
+}
+.card-body h3 {
+  color: #817979;
+}
+
+.card-body div {
+  margin-top: 8px;
+}
